@@ -21,7 +21,7 @@ diff_exp_glm <- function(d,annot){
                       unlist(lapply(strsplit(colnames(d),"-",fixed = T),function(x){x[2]})),sep = "-")
   sample <- sample[colnames_d,]
   
-  d_norm　<- as.data.frame(t(apply(d, 1,mean_norm)))
+  d_norm <- as.data.frame(t(apply(d, 1,mean_norm)))
   
   cat("\nStart calcuate Surrogate Variables ...\n")
   cat("======================================\n")
